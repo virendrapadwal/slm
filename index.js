@@ -19,7 +19,7 @@ app.post("/maximo",(req,res) => {
     res.send("Done");
 })
 app.use(express.static("/virendra"));
-app.get("*",(req,res)=> { res.send("Hello bsdk")})
+app.get("/up",(req,res)=> { res.send("Hello bsdk")})
 
 
 app.listen(PORT,()=> { console.info(`server is listening on ${PORT}`)})
