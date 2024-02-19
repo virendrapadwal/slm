@@ -15,7 +15,7 @@ app.get("/write",(req,res) => {
 
 app.post("/maximo",(req,res) => {
 
-    fs.writeFileSync("/virendra/"+Date.now() + ".txt",req.body);
+    fs.writeFileSync("/virendra/new.txt",req.body);
     res.send("Done");
 })
 app.use(express.static("/virendra"));
